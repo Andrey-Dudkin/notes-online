@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки онлайн</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div class="note_app">
+        <div class="container">
+            <h1 class="title">Заметки онлайн</h1>
+            <div class="user_interface">
+                <div class="box_filter_note">
+                    <select class="filter_note">
+                        <option class="filter_note_elem" value="Все">Все</option>
+                        <option class="filter_note_elem" value="Активные">Активные</option>
+                        <option class="filter_note_elem" value="Выполнные">Выполнные</option>
+                    </select>
+                </div>
+                <form action="#" class="form" id="form">
+                    <div class="form_input_box">
+                        <input type="text" id="note_input" placeholder="Введите текст заметки" name="name" class="form_input">
+                    </div>
+                    <button type="submit" class="button_create">
+                        Создать заметку
+                    </button>
+                </form>
+            </div>
+            <ul class="notes_list">
+            </ul>
+        </div>
+    </div>
+    <script src="./js/just-validate.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
